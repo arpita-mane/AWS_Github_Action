@@ -26,7 +26,7 @@ jobs:
       # Step 3: Deploy website to S3
       - name: Deploy Website to S3
         run: |
-          aws s3 sync . s3://arpita-29sep2026 \rdz
+          aws s3 sync . s3://arpita-29sep2026 \
             --delete \
             --exclude ".git/*" \
             --exclude ".github/*"
